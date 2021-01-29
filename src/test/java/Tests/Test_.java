@@ -7,7 +7,7 @@ import static org.junit.Assert.assertTrue;
 
 
 public class Test_ {
-    Analyze tryElement = new Analyze();
+    Analyze tryElement;
     int[] res;
     int[] res2;
 
@@ -15,6 +15,7 @@ public class Test_ {
     public void init(){
         res = new int[2];
         res2 = new int[2];
+        tryElement = new Analyze();
     }
 
     @Test
@@ -48,5 +49,4 @@ public class Test_ {
         assertTrue(res2[1] == 23665);
         System.out.println("OK");
     }
-
 }

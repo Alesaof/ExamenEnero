@@ -6,10 +6,10 @@ import java.util.List;
 public class Analyze {
     private  List data = new ArrayList<Integer>();
     private  int[] result = new int[2];
-    int aux;
-    String aux2;
-    int cont = 0;
-    int res = 0;
+    private int aux;
+    private String aux2;
+    private int cont = 0;
+    private int res = 0;
 
     public  int[] analyze(int min, int max, int sum) {
         for(int j = min; j <= max; j++){
