@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Analyze {
-    private static List data = new ArrayList<Integer>();
-    private static int[] result = new int[2];
+    private  List data = new ArrayList<Integer>();
+    private  int[] result = new int[2];
 
 
 
-    public static int[] analyze(int min, int max, int sum) {
+    public  int[] analyze(int min, int max, int sum) {
         int aux;
         String aux2;
         int cont = 0;
@@ -26,10 +26,11 @@ public class Analyze {
         result[0] = cont;
         result[1] = getSum();
 
+
         return result;
     }
 
-    private static int getSum() {
+    private  int getSum() {
         int res = 0;
         for(int i = 0; i < data.size(); i++){
             res += (int)data.get(i);
@@ -37,7 +38,7 @@ public class Analyze {
         return res;
     }
 
-    private static void saveData(int j) {
+    private  void saveData(int j) {
         data.add(j);
     }
 
