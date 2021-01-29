@@ -32,4 +32,21 @@ public class Test_ {
         assertTrue(res2[1] == 12555);
         System.out.println("OK");
     }
+
+    @Test
+    public void testAnalyzeFirstParam1_() {
+        res = tryElement.analyze(1000, 2000, 4);
+        System.out.print("Try analyze First Param1: ");
+        assertTrue(res[0] == 21);
+        System.out.println("OK");
+    }
+
+    @Test
+    public void testAnalyzeSecondParam1_() {
+        res2 = tryElement.analyze(1000, 2000, 4);
+        System.out.print("Try analyze Second Param1: ");
+        assertTrue(res2[1] == 23665);
+        System.out.println("OK");
+    }
+
 }
