@@ -27,7 +27,6 @@ public class Analyze {
     }
 
     private  int getSum() {
-        int res = 0;
         for(int i = 0; i < data.size(); i++){
             res += (int)data.get(i);
         }
